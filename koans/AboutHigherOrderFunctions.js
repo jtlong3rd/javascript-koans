@@ -20,7 +20,7 @@ describe("About Higher Order Functions", function () {
     var numbers = [1, 2, 3];
     var numbersPlus1 = _(numbers).map(function(x) { return x + 1 });
 
-    expect(numbersPlus1).toEqual([2, 3, 4]]);
+    expect(numbersPlus1).toEqual([2, 3, 4]);
     expect(numbers).toEqual([1, 2, 3]);
   });
 
@@ -42,7 +42,7 @@ describe("About Higher Order Functions", function () {
 
     _(numbers).forEach(isEven);
 
-    expect(msg).toEqual("2");
+    expect(msg).toEqual("falsetruefalse");
     expect(numbers).toEqual([1, 2, 3]);
   });
 
@@ -67,7 +67,7 @@ describe("About Higher Order Functions", function () {
   });
 
   it("should use range to generate an array", function() {
-      expect(_.range(3)).toEqual([0, 1, 2]]);
+      expect(_.range(3)).toEqual([0, 1, 2]);
       expect(_.range(1, 4)).toEqual([1, 2, 3]);
       expect(_.range(0, -4, -1)).toEqual([0, -1, -2, -3]);
   });
